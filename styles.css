@@ -85,6 +85,11 @@ main {
     font-size: 1rem;
 }
 
+.button-container button:hover{
+    background-color: #c7eaff;
+    transform: scale(1.05);
+}
+
 /* Gallery Styles */
 .gallery { 
     display: grid;
@@ -106,10 +111,6 @@ main {
     display: block;
 }
 
-.button-container button:hover{
-    background-color: #c7eaff;
-}
-
 footer {
     grid-area: footer;
     background: #333;
@@ -118,8 +119,78 @@ footer {
     padding: 1rem;
 }
 
-/* Order page */
+/* About page */
+.about-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
 
+.about-item {
+    width: 100%;
+    height: 10rem;
+    background-color: lightskyblue;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.about-item:hover {
+    transform: scale(1.05);
+    background-color: #c7eaff;
+}
+
+.about-item .front,
+.about-item .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    align-items: center; 
+    flex-direction: column;
+}
+
+.about-item .front {
+    font-size: 1.25rem;
+    text-decoration: underline;
+    z-index: 2;
+    font-weight: bolder;
+}
+
+.about-item .back {
+    display: none; /* Hide back text by default */
+}
+
+.back b{
+    text-decoration: underline;
+    font-size: 1.125rem;
+}
+
+/* Add styles for the flipped state */
+.about-item.flip .front {
+    display: none; 
+}
+
+.about-item.flip .back {
+    display: flex; 
+}
+
+.whale-background img {
+    width: 200px;
+    height: auto;
+    border: 1px solid #ccc;
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
