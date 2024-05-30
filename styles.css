@@ -1,3 +1,8 @@
+@font-face {
+    font-family: roboto;
+    src: url(assets/Roboto-Regular.ttf);
+}
+
 /* Basic Reset */
 * {
     margin: 0;
@@ -6,9 +11,9 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: roboto, Arial, sans-serif;
     background-color: #f5f5f5;
-    color: #333;
+    color: black;
     line-height: 1.6;
 }
 
@@ -64,7 +69,8 @@ main {
 .button-container{
     display: flex;
     justify-content: center;
-    gap: 1.5rem
+    gap: 1.5rem;
+    margin-bottom: 3rem; 
 }
 
 .button-container button{
@@ -84,7 +90,6 @@ main {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
     grid-gap: 1rem; 
-    margin-top: 3rem; 
 }
 
 .gallery-item { 
@@ -113,10 +118,8 @@ footer {
     padding: 1rem;
 }
 
-/* Order.html page */
-.google-form{
-    padding-top: 1.5rem;
-}
+/* Order page */
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
