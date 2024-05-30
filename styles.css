@@ -119,7 +119,13 @@ footer {
     padding: 1rem;
 }
 
-/* About page */
+/* Order Page */
+.google-form{
+    border-radius: 1rem;
+    background-color: #d9f2fd;
+}
+
+/* About Page */
 .about-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
