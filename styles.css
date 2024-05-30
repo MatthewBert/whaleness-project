@@ -113,6 +113,11 @@ footer {
     padding: 1rem;
 }
 
+/* Order.html page */
+.google-form{
+    padding-top: 1.5rem;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .container {
