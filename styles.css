@@ -3,7 +3,7 @@
     src: url(assets/Roboto-Regular.ttf);
 }
 
-:root{
+:root {
     --primary: #87cefa;
     --secondary: #d9f2fd;
     --white: #ffffff;
@@ -45,7 +45,7 @@ header {
     text-align: center;
 }
 
-header h1{
+header h1 {
     font-size: 1.40rem;
 }
 
@@ -68,19 +68,19 @@ main {
     text-align: center;
 }
 
-.main-logo{
+.main-logo {
     width: 12rem;
     margin-bottom: 2rem;
 }
 
-.button-container{
+.button-container {
     display: flex;
     justify-content: center;
     gap: 1.5rem;
-    margin-bottom: 3rem; 
+    margin-bottom: 3rem;
 }
 
-.button-container button{
+.button-container button {
     /* flex: 1; */
     background-color: var(--primary);
     border: none;
@@ -93,42 +93,45 @@ main {
     transition: transform 0.4s ease;
 }
 
-.button-container button:hover{
+.button-container button:hover {
     background-color: var(--secondary);
     transform: scale(1.05);
 }
 
 /* Gallery Styles */
-.gallery { 
+.gallery {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    grid-gap: 1rem; 
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
 }
 
-.gallery-item { 
-    background-color: var(--secondary); 
+.gallery-item {
+    background-color: var(--secondary);
     border: 2px solid var(--primary);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.gallery-image{
+.gallery-image {
     max-width: 100%;
     height: auto;
     display: block;
 }
+
+/* Footer section */
 
 footer {
     grid-area: footer;
     background: #333;
     color: var(--white);
     text-align: center;
-    padding: 1rem;
+    padding: .50rem;
+    margin-top: 4rem;
 }
 
 /* Order Page */
-.google-form{
+.google-form {
     border-radius: 1rem;
     background-color: var(--secondary);
 }
@@ -172,7 +175,7 @@ footer {
     justify-content: center;
     align-items: center;
     backface-visibility: hidden;
-    align-items: center; 
+    align-items: center;
     flex-direction: column;
 }
 
@@ -184,21 +187,22 @@ footer {
 }
 
 .about-item .back {
-    display: none; /* Hide back text by default */
+    display: none;
+    /* Hide back text by default */
 }
 
-.back b{
+.back b {
     text-decoration: underline;
     font-size: 1.125rem;
 }
 
 /* Add styles for the flipped state */
 .about-item.flip .front {
-    display: none; 
+    display: none;
 }
 
 .about-item.flip .back {
-    display: flex; 
+    display: flex;
 }
 
 .whale-background img {
