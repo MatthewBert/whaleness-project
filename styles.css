@@ -1,0 +1,128 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container Grid */
+.container {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "sidebar-left main sidebar-right"
+        "footer footer footer";
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+/* Grid Areas */
+header {
+    grid-area: header;
+    background: lightskyblue;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.sidebar-left {
+    grid-area: sidebar-left;
+    background: #fff;
+    padding: 1rem;
+}
+
+.sidebar-right {
+    grid-area: sidebar-right;
+    background: #fff;
+    padding: 1rem;
+}
+
+main {
+    grid-area: main;
+    background: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.main-logo{
+    width: 12rem;
+    margin-bottom: 1rem;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem
+}
+
+.button-container button{
+    /* flex: 1; */
+    background-color: lightskyblue;
+    border: none;
+    border-radius: 15px;
+    color: black;
+    width: 5rem;
+    height: 2rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* Gallery Styles */
+.gallery { 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 1rem; 
+    margin-top: 3rem; 
+}
+
+.gallery-item { 
+    background-color: #e0e0e0; 
+    padding: 1rem; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery-image{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.button-container button:hover{
+    background-color: #c7eaff;
+}
+
+footer {
+    grid-area: footer;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        grid-template-areas:
+            "header"
+            "main"
+            "sidebar-left"
+            "sidebar-right"
+            "footer";
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar-left,
+    .sidebar-right {
+        display: none;
+    }
+}
