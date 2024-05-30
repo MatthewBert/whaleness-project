@@ -101,7 +101,7 @@ main {
 /* Gallery Styles */
 .gallery {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
 }
 
@@ -136,11 +136,18 @@ footer {
     background-color: var(--secondary);
 }
 
+/* Contact Page */
+.contact-container{
+    background-color: var(--primary);
+    border-radius: 1.5rem;
+    padding: 1rem 0.5rem;
+}
+
 /* About Page */
 .about-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2rem;
+    grid-gap: 1.5rem;
     justify-items: center;
     align-items: center;
     margin-bottom: 3rem;
@@ -148,10 +155,10 @@ footer {
 
 .about-item {
     width: 100%;
-    height: 10rem;
+    height: 14rem;
     background-color: var(--primary);
     border: 1px solid var(--secondary);
-    border-radius: 20px;
+    border-radius: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -181,7 +188,6 @@ footer {
 
 .about-item .front {
     font-size: 1.25rem;
-    text-decoration: underline;
     z-index: 2;
     font-weight: bolder;
 }
@@ -192,7 +198,6 @@ footer {
 }
 
 .back b {
-    text-decoration: underline;
     font-size: 1.125rem;
 }
 
