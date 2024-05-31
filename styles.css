@@ -106,7 +106,7 @@ main {
 }
 
 .gallery-item {
-    background-color: var(--secondary);
+    background-color: var(--primary);
     border: 2px solid var(--primary);
     display: flex;
     align-items: center;
