@@ -41,12 +41,13 @@ header {
     grid-area: header;
     background: var(--primary);
     color: var(--white);
-    padding: 1rem;
+    padding: .50rem;
     text-align: center;
 }
 
 header h1 {
-    font-size: 1.40rem;
+    font-size: 1.25rem;
+    font-weight: bolder;
 }
 
 .sidebar-left {
